@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Athena</title>
+    <!-- <link rel="stylesheet" href="style.css"> (De acordo com o solicitado, por enquanto não é necessário estilização) -->
+</head>
+<body>
+    <!-- ### ANOTAÇÕES ### -->
+    <!-- <header> é uma tag semântica: ela existe especificamente para marcar o cabeçalho do site.
+    class="header" conecta essa tag com o CSS -->
+
+
+    <header class="header">
+        <!-- Essa div é só um "envelope" interno, usado para limitar a largura do conteúdo e organizar os itens com Flexbox -->
+        <!-- "width=" é utilizado para aumentar e diminuir as proporções da imagem inserida -->
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="assets\logoathena.png" width="200" alt="Logo do Projeto Athena">
+
+                <h2 style="color: #990000;">Ath<span style="color:red;">ena</span></h2>
+            </a>
+
+            <ul class="nav" id="nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Meus Livros</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Gêneros</a></li>
+                <li><a href="#">Avaliações</a></li>
+                <li><a href="#">Contato</a></li>  
+            </ul>
+
+            <div class="actions">
+                <a href="#" class="btn btn-entrar">Entrar</a>
+                <a href="#" class="btn btn-cadastrar">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
