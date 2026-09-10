@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Athena</title>
-    <!-- <link rel="stylesheet" href="style.css"> (De acordo com o solicitado, por enquanto não é necessário estilização) -->
+    
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ### ANOTAÇÕES ### -->
-    <!-- <header> é uma tag semântica: ela existe especificamente para marcar o cabeçalho do site.
-    class="header" conecta essa tag com o CSS -->
-
 
     <header class="header">
-        <!-- Essa div é só um "envelope" interno, usado para limitar a largura do conteúdo e organizar os itens com Flexbox -->
-        <!-- "width=" é utilizado para aumentar e diminuir as proporções da imagem inserida -->
         <div class="header-inner">
+            
+            <!-- Logo -->
             <a href="#" class="logo">
-                <img src="assets\logoathena.png" width="200" alt="Logo do Projeto Athena">
-
-                <h2 style="color: #990000;">Ath<span style="color:red;">ena</span></h2>
+                <img src="assets/logoathena.png" alt="Logo da Biblioteca Athena">
+                <h2>Ath<span>ena</span></h2>
             </a>
 
+            <!-- Menu de navegação -->
             <ul class="nav" id="nav">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Início</a></li>
                 <li><a href="#">Meus Livros</a></li>
                 <li><a href="#">Autores</a></li>
                 <li><a href="#">Gêneros</a></li>
@@ -31,11 +34,19 @@
                 <li><a href="#">Contato</a></li>  
             </ul>
 
+            <!-- Botões de ação -->
             <div class="actions">
                 <a href="#" class="btn btn-entrar">Entrar</a>
                 <a href="#" class="btn btn-cadastrar">Cadastrar</a>
             </div>
+
+            <!-- Botão Hambúrguer para telas pequenas (Passo 1) -->
+            <button class="hamburguer" id="btn-menu" aria-label="Abrir Menu">☰</button>
+
         </div>
     </header>
+
+    <!-- Conexão do arquivo JavaScript (Passo 1) -->
+    <script src="script.js"></script>
 </body>
 </html>
