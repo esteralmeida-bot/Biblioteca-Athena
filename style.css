@@ -1,6 +1,9 @@
 /* Cabeçalho do projeto Biblioteca Athena */
-
-/* 1. Variáveis globais de cor */
+/* 
+Aqui guardamos as cores do site em um só lugar. 
+Vantagem: se quiser trocar uma cor, muda só aqui e ela é atualizada em todos os lugares que a usam.
+*/
+/* Variáveis globais de cor */
 :root {
     --vermelho-principal: #990000;
     --vermelho-destaque: #dc2626;
@@ -10,7 +13,7 @@
     --cor-fundo: #ffffff;
 }
 
-/* 2. Reset básico */
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +26,7 @@ body {
     background-color: var(--cor-fundo);
 }
 
-/* 3. Estrutura do Cabeçalho */
+/* Estrutura do Cabeçalho */
 .header {
     position: sticky;
     top: 0;
@@ -131,7 +134,7 @@ body {
     background-color: var(--vermelho-destaque);
 }
 
-/* Passo 2 — Esconder o botão hambúrguer em telas grandes */
+/* Esconder o botão hambúrguer em telas grandes */
 .hamburguer {
     display: none;
     font-size: 26px;
@@ -142,7 +145,7 @@ body {
     padding: 4px 8px;
 }
 
-/* Passo 3 — Media Query para telas pequenas (celulares e tablets até 768px) */
+/* Media Query para telas pequenas (celulares e tablets até 768px) */
 @media (max-width: 768px) {
     .header-inner {
         flex-wrap: wrap; /* Permite que o menu ocupe a linha de baixo ao abrir */

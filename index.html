@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- <header> é uma tag semântica: ela existe especificamente para marcar o cabeçalho do site.
+    class="header" conecta essa tag com o CSS -->
     <header class="header">
+         <!-- Essa div é só um "envelope" interno, usado para limitar a largura do conteúdo e organizar os itens com Flexbox -->
+        <div class="header-inner">
         <div class="header-inner">
             
             <!-- Logo -->
@@ -40,13 +43,13 @@
                 <a href="#" class="btn btn-cadastrar">Cadastrar</a>
             </div>
 
-            <!-- Botão Hambúrguer para telas pequenas (Passo 1) -->
+            <!-- Botão Hambúrguer para telas pequenas -->
             <button class="hamburguer" id="btn-menu" aria-label="Abrir Menu">☰</button>
 
         </div>
     </header>
 
-    <!-- Conexão do arquivo JavaScript (Passo 1) -->
+    <!-- Conexão do arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
